@@ -33,7 +33,6 @@ body
     text-align:center;
     border-top: 2px solid #751b1b;
     border-bottom: 2px solid #751b1b;
-    height: 40px;
     color: black;
 }
 .content
@@ -115,4 +114,73 @@ body
     left:0;
     top:0;
     z-index: 100;
+}
+ol
+{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    font-size:20px;
+    height:35px;
+    line-height: 200%;
+
+}
+/*style only for adres in lis*/
+ol a
+{
+    color:white;
+    text-decoration:none;
+    display: block;
+}
+/*styl for li that parent have in ol*/
+/*parentt > child*/
+ol > li
+{
+    display: inline-block;
+    width: 150px;
+    border-right: 2px dashed black;
+    
+}
+/*pierwsza opcja*/
+ol > li:first-child
+{
+    border-left: 2px dashed black;
+}
+ol>li:hover
+{
+    background-color: #cf6969;
+}
+ol >li:hover > a
+{
+    color:#451717;
+}
+ol>li>ul
+{
+    list-style-type: none;
+    padding: 0px;
+    margin:0;
+    height:40px;
+    /*nie pokauj domyslnie elemntow listy*/
+    display: none;
+}
+ol > li>ul>li
+{
+    background-color: #cf6969;
+    position:relative;
+    z-index: 100;
+    border-top:1px dashed black;
+}
+/*pojawiabnie sie opcji*/
+ol > li:hover > ul
+{
+    display: block;
+}
+ol > li>ul>li:hover
+{
+    background-color: yellow;
+
+}
+ol > li>ul>li:hover > a
+{
+    color:red;
 }
