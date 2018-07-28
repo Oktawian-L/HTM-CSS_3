@@ -43,26 +43,28 @@ body
     margin-right:auto;
     text-align:justify;
     background-color: yellow;
-    height: 200px;
+    height: 1600px;
     color: black;
+    padding-top:10px;
 }
 .socials
 {
     width:100%;
     text-align:center;
     background-color: #292929;
+    color:white;
 
 }
 .socialsdivs
 {
     width:1000px;
-    margin-left: auto;
+    margin-left:auto;
     margin-right:auto;
-    text-align: center;
+    text-align:center;
 }
 .fb
 {
-    width: 250px;
+    width: 25%;
     height:155px;
     float: left;
 }
@@ -72,7 +74,7 @@ body
 }
 .yt
 {
-    width: 250px;
+    width: 25%;
     height:155px;
     float: left;
 }
@@ -82,7 +84,7 @@ body
 }
 .tw
 {
-    width: 250px;
+    width: 25%;
     height:155px;
     float: left;
 }
@@ -92,7 +94,7 @@ body
 }
 .gp
 {
-    width: 250px;
+    width: 25%;
     height:155px;
     float: left;
 }
@@ -100,4 +102,17 @@ body
 {
     background-color: #d95333;
 }
-
+.footer
+{
+    text-align:center;
+    background-color: #222222;
+    padding:30px;
+}
+.sticky
+{
+    width:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 100;
+}
