@@ -67,24 +67,96 @@ h1
 .photo1
 {
 	width: 450px;
+	/*transition - plynne przejscie miedzy stanami*/
+	transition: all 0.3s ease-in-out;
 }
-
+.photo1:hover
+{
+	/*transform - zestaw cech do zmiany niedostepnych inaczej*/
+	transform: scale(0.9 , 1.4);
+	opacity:0.1;
+	
+}
 
 .photo2
 {
 	width: 450px;
+	transition: transform .2s ease-in-out;
 }
+.photo2:hover
+{
+	/*skew rownloleglobok*/
+	transform: scale(0.8) rotate(5deg) skew(10deg, 0deg);
+	-webkit-transform: scale(0.8) rotate(5deg) skew(10deg, 0deg);
+	-ms-transform: scale(0.8) rotate(5deg) skew(10deg, 0deg);
 
+}
 .photo3
 {
 	width: 450px;
 }
+.overlay
+{
+	/*pozycja relatywna pozwala uzyc cztrerach wlasciweisco left r bott  
+	za pomoca ktorych mozna przesywaac elemtn wgledem ulkaldu odnienisienia */
+	position: relative;
+	width:450px;
+	height:278px;
+}
+.overlay .link/*zlap link w overlayu*/
+{
+	position: absolute;
+	display: block;
+	width:450px;
+	height:65px;
+	background-color: black;
+	/*przkelj do punktu 0,0*/
+	left: 0px;
+	bottom:0px;
+	opacity:0;
+	transition: opacity .5s ease-in-out;
+}
+.overlay:hover .link
+{
+	opacity:0.8;
+}
+.overlayT
+{
+	/*pozycja relatywna pozwala uzyc cztrerach wlasciweisco left r bott  
+	za pomoca ktorych mozna przesywaac elemtn wgledem ulkaldu odnienisienia */
+	position: relative;
+	width:450px;
+	height:278px;
+}
+.overlayT .link/*zlap link w overlayu*/
+{
+	position: absolute;
+	display: block;
+	width:100%;
+	height:100%;
+	background-color: limegreen;
+	/*przkelj do punktu 0,0*/
+	left: 0px;
+	bottom:0px;
+	opacity:0;
+	transition: opacity .5s ease-in-out;
+}
+.overlayT:hover .link
+{
+	opacity:0.9;
+}
+.photo3:hover
+{
 
+}
 .photo4
 {
 	width: 450px;
 }
-
+.photo4:hover
+{
+	
+}
 .photo5
 {
 	width: 450px;
