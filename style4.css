@@ -145,6 +145,18 @@ h1
 {
 	opacity:0.9;
 }
+.icon
+{
+	display:block;
+	top:25%;
+	position:relative;
+	font-size: 72px;
+
+}
+.icon p
+{
+	font-size:20px;
+}
 .photo3:hover
 {
 
@@ -160,9 +172,30 @@ h1
 .photo5
 {
 	width: 450px;
+	height:278px;
+	transition: opacity .5s ease-in-out;
+	overflow:hidden;
 }
-
+.photo5 img
+{
+	transition: all .5s ease-in-out;
+}
+.photo5:hover img
+{
+	transform:scale(1.15);
+}
 .photo6
 {
 	width: 450px;
+	height:278px;
+	transition: opacity .5s ease-in-out;
+	overflow:hidden;
+}
+.photo6 img
+{
+	transition: all .5s ease-in-out;
+}
+.photo6:hover img
+{
+	transform:scale(1.15) rotate(-5deg);
 }
