@@ -15,8 +15,9 @@ body
     margin-top:100px;
     box-shadow: 3px 3px 30px 5px black;
 }
-/*boxy gdzie sa wpisywanie login i haslo*/
-input
+/*tylko boxy gdzie sa wpisywanie login i haslo*/
+input[type=text],
+input[type=password]
 {
     width:300px;
     background-color: #efefef;
@@ -27,4 +28,76 @@ input
     padding:10px;
     /*wymus 300px niezaleznie od contentu*/
     box-sizing: border-box;
+    /*obwodka na focusie*/
+    outline:none;
+    margin-top: 10px;
+}
+input[type=text]:focus,
+input[type=password]:focus
+{
+    box-shadow: 0px 0px 10px 2px black; 
+    border: 2px solid greenyellow;
+    background-color: lightgreen;
+    color:green;
+}
+input[type = submit]
+{
+    width:300px;
+    background-color: green;
+    font-size:20px;
+    color:white;
+    padding : 15px 10px;
+    margin-top:10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    letter-spacing:2px;
+    /*obwodka na focusie*/
+    outline:none;
+    margin-top:20px;
+}
+/*responsywnosc buttpona po najechaniu tabem*/
+input[type = submit]:focus
+{
+    box-shadow: 0px 0px 10px 2px black; 
+}
+input[type = submit]:hover
+{
+    background-color: lightgreen;
+}
+/*koloe dla placholder*/
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #428C42;
+}
+/* Firefox < 19 */
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #428C42;
+}
+/* Firefox > 19 */
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #428C42;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #428C42;
 }
